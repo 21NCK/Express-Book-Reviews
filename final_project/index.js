@@ -18,7 +18,7 @@ app.use("/customer/auth/*", function auth(req, res, next) {
     }
 
     try {
-        const verified = jwt.verify(token, "your_jwt_secret_key");
+        const verified = jwt.verify(token, "21NCK");
         req.user = verified;
         next();
     } catch (err) {
