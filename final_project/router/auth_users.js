@@ -14,7 +14,7 @@ const authenticatedUser = (username,password)=>{
 }
 const JWT_SECRET = "your_jwt_secret_key";
 //only registered users can login
-regd_users.post("/customer/login", (req, res) => {
+regd_users.post("/login", (req, res) => {
     const { username, password } = req.body;
 
     // Check if fields are provided
